@@ -1,0 +1,14 @@
+@import "./others/colors.scss";
+@import "./others/page.scss";
+@import "./others/query.scss";
+
+body{
+    background-image: url(../images/marsBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+    

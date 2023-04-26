@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ?Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ?Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- ?Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- ?CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- ?Style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Horizonte Vermelho - SpaceX</title>
+  </head>
+
+  <body class="py-5">
+      <div class="container-fluid px-4 container1">
+        <!-- ?Logo -->
+        <div class="text-center">
+          <img
+            class="img-fluid topLogo mt-4 mb-3"
+            src="./images/spacexLogo.png"
+            alt="SpaceX Logo"
+          />
+        </div>
+
+        <!-- ?Apresentação -->
+        <div class="text-center mb-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3 font-color">
+              Bem vindo explorador!
+            </h5>
+            <h5 class="card-title mb-3">
+              A missão mais desafiadora da história da humanidade está prestes a começar - e queremos que você faça parte dela!
+            </h5>
+          
+            <p class="card-text">
+              O futuro da exploração espacial começa aqui. Preencha o formulário e faça parte da nossa missão em Marte!
+            </p>
+          </div>
+          
+        </div>
+        
+
+        <!-- ?Nome -->
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Nome</span>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            placeholder="Digite o seu nome completo"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            required
+            autocomplete="off"
+            pattern="^[a-zA-Z\s]+$"
+            onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32"
+          />
+        </div>
+  
+        <!-- ?E-mail -->
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">E-mail</span>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            placeholder="Digite o seu e-mail"
+            aria-label="Email"
+            aria-describedby="basic-addon1"
+            autocomplete="off"
+          />
+        </div>
+  
+        <!-- ?Celular-->
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Celular</span>
+          <input
+            type="tel"
+            placeholder="(99) 9999-9999"
+            autocomplete="off"
+            class="form-control form-control-sm"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          />
+        </div>
+  
+        <!-- ?Endereço -->
+        <div class="input-group mb-3">
+          <span class="input-group-text">País</span>
+          <select class="form-select" aria-label="País">
+            <option selected disabled>Selecione</option>
+            <option value="Brasil">Brasil</option>
+            <option value="EUA">Estados Unidos</option>
+            <option value="Rússia">Rússia</option>
+            <option value="China">China</option>
+            <option value="França">França</option>
+            <option value="Alemanha">Alemanha</option>
+            <option value="Canadá">Canadá</option>
+            <option value="Itália">Itália</option>
+            <option value="Reino Unido">Reino Unido</option>
+            <option value="Japão">Japão</option>
+           </select>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Estado</span>
+          <input type="text" class="form-control" aria-label="Estado" placeholder="Digite o seu estado">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Cidade</span>
+          <input type="text" class="form-control" aria-label="Cidade" placeholder="Digite a sua cidade">
+        </div>
+
+        <hr class="mt-2 mb-3">
+
+        <!-- ?Gênero -->
+        <div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Gênero</span>
+            <select
+              class="form-select form-select-sm"
+              aria-label="Default select example"
+              required
+            >
+              <option selected disabled>Selecione</option>
+              <option value="1">Prefiro não responder</option>
+              <option value="2">Mulher (Feminino)</option>
+              <option value="3">Homem (Masculino)</option>
+              <option value="3">Não-binário</option>
+              <option value="3">Transexual</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- ?Tipo sanguíneo -->
+        <div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Tipo sanguíneo</span>
+            <select
+              class="form-select form-select-sm"
+              aria-label="Default select example"
+              required
+            >
+              <option selected disabled>Selecione</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+              <option value="Não sei">Não sei meu tipo sanguíneo</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- ?Altura e peso -->
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Altura</span>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="0"
+            aria-label="Altura"
+            aria-describedby="basic-addon1"
+            min="0"
+            max="300"
+            step="1"
+          />
+          <span class="input-group-text" id="basic-addon1">cm</span>
+        </div>
+  
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Peso</span>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="0"
+            aria-label="Altura"
+            aria-describedby="basic-addon1"
+            min="0"
+            max="200"
+            step="1"
+          />
+          <span class="input-group-text" id="basic-addon1">kg</span>
+        </div>
+  
+        <!-- ?Data de nascimento -->
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Data de Nascimento</span>
+          <input type="date" class="form-control" aria-label="Data de Nascimento" aria-describedby="basic-addon1">
+        </div>
+        
+        <hr>
+
+        <!-- ?Doença -->
+        <p class="paragraph text-center">
+          Possui alguma doença crônica e/ou alergia?
+        </p>
+        <div class="container mb-3">
+          <div class="text-center">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineRadio1">Sim</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineRadio2">Não</label>
+            </div>
+          </div>
+        </div>
+        <div class="desease-control">
+          <input
+          type="text"
+          class="form-control desease-control"
+          aria-label="Qual doença/alergia?"
+          placeholder="Informe qual"
+        />
+        <hr>
+        </div>
+        
+        <!-- ?Linguas -->
+        <p class="paragraph text-center">
+          Quais linguas você domina ou tem conhecimento?
+        </p>
+        <div class="container">
+          <div class="text-start">
+            <div class="row">
+              <div class="col col-1"></div>
+  
+              <div class="col col-5">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Inglês</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Francês</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Russo</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Italiano</label
+                  >
+                </div>
+              </div>
+  
+              <div class="col col-5">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Português</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Mandarim</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Espanhol</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Alemão</label
+                  >
+                </div>
+              </div>
+  
+              <div class="col col-1"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- ?Conhecimentos -->
+        <p class="paragraph text-center">
+          Em quais áreas voce possui conhecimento?
+        </p>
+        <div class="container">
+          <div class="text-start">
+            <div class="row">
+              <div class="col col-1"></div>
+  
+              <div class="col col-5">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Biologia</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Geologia</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Física</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Engenharia</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Quimica</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Agronomia</label
+                  >
+                </div>
+              </div>
+  
+              <div class="col col-5">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Psicologia</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Medicina</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Robótica</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Computação</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Astronomia</label
+                  >
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Geografia</label
+                  >
+                </div>
+              </div>
+  
+              <div class="col col-1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ?Range -->
+        <div class="form-group mt-3">
+          <label for="empolgacao" class="text-center mb-3">O quão empolgado e motivado você está com a possibilidade de participar da missão?</label>
+          <div class="range-wrap">
+            <input type="range" class="form-range" min="0" max="100" value="0" id="empolgacao" oninput="this.style.background = 'linear-gradient(to right, #ff0043 0%, #ff0043 ' + this.value + '%, #ddd ' + this.value + '%, #ddd 100%)'; document.getElementById('rangeValue').innerHTML = this.value + '%';">
+            <div class="text-center mt-1"><span id="rangeValue">0%</span></div>
+          </div>
+        </div>
+
+        <hr />
+  
+        <!-- ?Questionário -->
+        <div>
+          <p class="paragraph text-center">Fale um pouco sobre você.</p>
+          <textarea
+            class="form-control text-area-limit"
+            aria-label="With textarea"
+            cols="30"
+            rows="10"
+            required
+            maxlength="200"
+          ></textarea>
+        </div>
+  
+        <div>
+          <p class="paragraph text-center">Por que você quer ir a Marte?</p>
+          <textarea
+            class="form-control text-area-limit"
+            aria-label="With textarea"
+            cols="30"
+            rows="10"
+            required
+            maxlength="200"
+          ></textarea>
+        </div>
+  
+        <div>
+          <p class="paragraph text-center">O que você espera encontrar lá?</p>
+          <textarea
+            class="form-control text-area-limit"
+            aria-label="With textarea"
+            cols="30"
+            rows="10"
+            required
+            maxlength="200"
+          ></textarea>
+        </div>
+  
+        <div>
+          <p class="paragraph text-center">Como contribuirá para a missão?</p>
+          <textarea
+            class="form-control text-area-limit"
+            aria-label="With textarea"
+            cols="30"
+            rows="10"
+            required
+            maxlength="200"
+          ></textarea>
+        </div>
+  
+  
+        <!-- ?Treinamentos -->
+        <div>
+          <p class="paragraph text-center">Quais treinamentos você já fez?</p>
+          <textarea
+            class="form-control text-area-limit"
+            aria-label="With textarea"
+            cols="30"
+            rows="10"
+            required
+            maxlength="200"
+          ></textarea>
+        </div>
+  
+        <!-- ?Qualidades -->
+        <div>
+          <p class="paragraph text-center">Quais são as suas qualidades?</p>
+          <textarea
+            class="form-control text-area-limit"
+            aria-label="With textarea"
+            cols="30"
+            rows="10"
+            required
+            maxlength="200"
+          ></textarea>
+        </div>
+        
+  
+          <!-- ?Submit -->
+          <div class="text-center mt-3">
+            <button type="button" class="btn btn-outline-danger mb-3 btnSucess">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="./js/desease.js"></script>
+    <!-- ?Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <footer>
+    <!-- ?Footer -->
+    <div class="container text-center fotter">
+      <div class="container p-4">
+        <div class="d-flex justify-content-center">
+          <a
+            href="https://instagram.com/guibus_dev"
+            target="_blank"
+            class="me-4 text-white"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a
+            href="https://github.com/gui-bus"
+            target="_blank"
+            class="me-4 text-white"
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gui-bus/"
+            target="_blank"
+            class="me-4 text-white"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a
+            href="https://twitter.com/guibus_dev"
+            target="_blank"
+            class="me-4 text-white"
+          >
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="mailto:guibus.dev@gmail.com" class="text-white">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+        </div>
+        <div class="text-center p-3">
+          &copy; 2023 - Feito por Guilherme Bustamante.
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.font-color {
+  color: #ff0043;
+}
+
+.container1 {
+  background-color: rgba(19, 18, 18, 0.9450980392);
+  width: 450px;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.topLogo {
+  width: 280px;
+  padding: 1.5rem;
+}
+
+.paragraph {
+  margin: 8px 0px;
+  font-size: 16px;
+}
+
+.btnSucess {
+  color: #ff0043;
+  border: 1px solid #ff0043;
+}
+.btnSucess:hover {
+  background-color: #ff0043;
+  color: white;
+}
+
+.fotter {
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff0043;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(19, 18, 18, 0.9450980392);
+}
+
+.text-area-limit {
+  height: 5rem;
+  resize: none;
+}
+.text-area-limit::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 0.15rem;
+}
+
+.form-check-input:checked {
+  background-color: #ff0043;
+  border: 1px solid #ff0043;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ff0043;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+  border-color: none;
+}
+
+.form-select:focus {
+  box-shadow: none;
+  border-color: #ff0043;
+}
+
+a:hover .fab,
+a:hover .fas {
+  color: #ff0043;
+  transition: color 0.3s ease-in-out;
+}
+
+.desease-control::placeholder {
+  text-align: center;
+}
+
+input[type=range] {
+  width: 100%;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #ff0043;
+}
+
+input[type=range]:active::-webkit-slider-thumb,
+input[type=range]:hover::-webkit-slider-thumb {
+  background-color: #ff0043;
+  border: 1px solid #fff;
+}
+
+#rangeValue {
+  font-size: 20px;
+  color: #ff0043;
+}
+
+::selection {
+  color: #fff;
+  background-color: #ff0043;
+}
+
+@media (max-width: 500px) {
+  .container1 {
+    width: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .container1 {
+    width: 350px;
+  }
+}
+body {
+  background-image: url(../images/marsBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
